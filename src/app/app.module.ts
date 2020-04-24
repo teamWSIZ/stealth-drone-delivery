@@ -10,6 +10,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {ChartsModule} from "ng2-charts";
 import { StatsComponent } from './stats/stats.component';
 import { AdmComponent } from './adm/adm.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { AdmComponent } from './adm/adm.component';
     MenuComponent,
     StatsComponent,
     AdmComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,

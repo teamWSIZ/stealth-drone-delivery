@@ -15,10 +15,11 @@ export class AppComponent {
   //podłączenie globalnej reakcji na klawisze
   @HostListener('window:keyup', ['$event'])
   keyEvent(event: KeyboardEvent) {
-    if (event.key === '`') {
+    console.log(JSON.stringify(event.key));
+    if (event.key === '@') {
       this.router.navigate(['adm']);
-    } else if (event.key === '&') {
-      alert('hahaha');
+    } else if (event.key === 'Escape') {
+      alert('Escape key pressed!');
     }
   }
 

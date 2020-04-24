@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {DailyReport} from './daily-report';
 import {GService} from '../g.service';
 
 
