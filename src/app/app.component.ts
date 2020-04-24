@@ -18,7 +18,7 @@ export class AppComponent {
     console.log(JSON.stringify(event.key));
     if (event.key === '@') {
       this.router.navigate(['adm']);
-    } else if (event.key === 'Escape') {
+    } else if (event.key === 'Enter') {
       alert('Escape key pressed!');
     }
   }
