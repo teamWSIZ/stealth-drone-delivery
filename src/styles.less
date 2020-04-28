@@ -1,6 +1,34 @@
-html, body {
-  background-color: #10041c;
+html {
+  background-color: #0E0E11;
 }
+
+body {
+  background-color: #0E0E11;
+}
+
+
+@media (min-width: 768px) {
+  .card-body {
+    font-size: 1rem;
+  }
+
+  .card {
+    min-height: 30vh;
+  }
+
+  .h3.card-header {
+    font-size: 1.4rem;
+  }
+
+  .col-md-6 {
+    padding-top: 0px;
+  }
+
+  body {
+    overflow: hidden;
+  }
+}
+
 
 * {
   font-family: 'Raleway', sans-serif;
@@ -11,17 +39,7 @@ html, body {
 }
 
 
-.horizontalbar {
-  border-top: solid 1px;
-  border-bottom: solid 1px;
-  background-color: rgba(228,245,243,0.88);
-}
-
 .clickable {
   cursor: pointer;
 }
 
-
-.boxed {
-  border: solid 1px;
-}

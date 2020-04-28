@@ -1,43 +1,45 @@
 
-
 #bluetoo {
-  background-image: url("../../assets/x47.jpeg");
+  //background-color: rgba(20, 20, 20, 0.85);
 }
 
 #productpage {
-  background-image: url("../../assets/x47.jpeg");
-  width: auto;
-  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.9) 100%), url("../../assets/x47.jpeg");
+  background-size: 100vw;
+  background-attachment: fixed;
+  //height: 1067px;
 
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   //background-size: 100%;
 }
 
 .card {
-  background-color: rgba(40,40,40,0.85);
+  background-color: rgba(40, 40, 40, 0.85);
+  height: 40vh;
+  min-height: 12rem;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 8px;
 }
 
+@media (min-width: 768px) {
+  .card {
+    margin-bottom: 16px;
+  }
+}
 
 
 
 
 @media (min-width: 544px) {
-  h1 {font-size:1.5rem;} /*1rem = 16px*/
-  h3 {font-size: 4rem;}
 }
 
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  h1 {font-size:2rem;} /*1rem = 16px*/
-  card { padding-top: 10rem}
+  //navbar toggle
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  h1 {font-size:2.5rem;} /*1rem = 16px*/
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  h1 {font-size:3rem;} /*1rem = 16px*/
 }

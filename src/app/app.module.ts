@@ -11,6 +11,7 @@ import {ChartsModule} from "ng2-charts";
 import { StatsComponent } from './stats/stats.component';
 import { AdmComponent } from './adm/adm.component';
 import { ProductsComponent } from './products/products.component';
+import { VhomeComponent } from './vhome/vhome.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ProductsComponent } from './products/products.component';
     StatsComponent,
     AdmComponent,
     ProductsComponent,
+    VhomeComponent,
   ],
   imports: [
     BrowserModule,

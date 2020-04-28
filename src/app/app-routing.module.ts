@@ -4,10 +4,11 @@ import {HomeComponent} from './home/home.component';
 import {StatsComponent} from "./stats/stats.component";
 import {AdmComponent} from './adm/adm.component';
 import {ProductsComponent} from "./products/products.component";
+import {VhomeComponent} from "./vhome/vhome.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: VhomeComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'adm', component: AdmComponent },
   { path: 'stats', component: StatsComponent },
