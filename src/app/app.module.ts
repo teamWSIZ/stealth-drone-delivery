@@ -12,6 +12,7 @@ import { StatsComponent } from './stats/stats.component';
 import { AdmComponent } from './adm/adm.component';
 import { ProductsComponent } from './products/products.component';
 import { VhomeComponent } from './vhome/vhome.component';
+import { MyInsetComponent } from './my-inset/my-inset.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { VhomeComponent } from './vhome/vhome.component';
     AdmComponent,
     ProductsComponent,
     VhomeComponent,
+    MyInsetComponent,
   ],
   imports: [
     BrowserModule,

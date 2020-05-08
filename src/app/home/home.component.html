@@ -2,10 +2,16 @@
   <div class="col-md-1"></div>
   <div class="col-md-10 text-center" style="padding-top: 5%">
     <h1 style="color: #98a2ac" > Fast. Quiet. Reliable. </h1>
-    <span class="d-block d-sm-none">(small display)</span>
-<!--    <img class="img-fluid" src="assets/x47.jpeg">-->
+
+    <span class="d-block d-sm-none" id="warntext">(small display)</span>
+    <span class="d-none d-xl-block"> (very wide display is challenging!)</span>
+
+    <span class="d-none d-sm-block"> (ma zniknąć na xs)</span>
+
+    <img class="img-fluid d-block d-sm-none" src="assets/x47.jpeg">
 
 
+    <!-- cały poniższy blok (carousel) nie będzie wyświetlany na pionowych urządzeniach mobilnych -->
     <div class="carousel slide d-none d-sm-block" id="carousel-12">
 
       <ol class="carousel-indicators">

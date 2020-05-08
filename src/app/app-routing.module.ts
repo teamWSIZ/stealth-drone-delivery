@@ -9,6 +9,7 @@ import {VhomeComponent} from "./vhome/vhome.component";
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'home', component: VhomeComponent },
+  { path: 'alt', component: HomeComponent },
   { path: 'products', component: ProductsComponent },
   { path: 'adm', component: AdmComponent },
   { path: 'stats', component: StatsComponent },
