@@ -5,6 +5,7 @@ import {StatsComponent} from "./stats/stats.component";
 import {AdmComponent} from './adm/adm.component';
 import {ProductsComponent} from "./products/products.component";
 import {VhomeComponent} from "./vhome/vhome.component";
+import {ImgfitComponent} from "./imgfit/imgfit.component";
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'adm', component: AdmComponent },
   { path: 'stats', component: StatsComponent },
+  { path: 'fit', component: ImgfitComponent },
 ];
 
 @NgModule({
