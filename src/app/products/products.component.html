@@ -1,44 +1,32 @@
 <div class="row no-gutters" id="productpage">
   <div class="col-md-6">
-    <div class="card">
-      <div class="card-header h3">
-        From anywhere in the world
-      </div>
-      <div class="card-body">
-        We accept packages delivered from anywhere in the world, and make them available to you
-        anonymously, and discretely.
-      </div>
-    </div>
-    <div class="card" id="bluetoo">
-      <div class="card-header h3">
-        Delivered to Bluetooth MAC
-      </div>
-      <div class="card-body">
-        You don't have to share your location with us; just share MAC address of any bluetooth
-        device, and our drone will locate the device and drop the package close to it.
-      </div>
-    </div>
 
+    <app-product-card
+      [title]="' From anywhere in the world'"
+      [text]="'We accept packages delivered from anywhere in the world, and make them available to you\n'+
+'        anonymously, and discretely.'">
+    </app-product-card>
+
+    <app-product-card
+      [title]="'Delivered to Bluetooth MAC'"
+      [text]="'You don\'t have to share your location with us; just share MAC address of any bluetooth\n'+
+'        device, and our drone will locate the device and drop the package close to it.'">
+    </app-product-card>
   </div>
-  <div class="col-md-6">
-    <div class="card">
-      <div class="card-header h3">
-        Ports of departure
-      </div>
-      <div class="card-body">
-        We have selected three european ports of departure for the convenience of your delivery.
-        They are located outside of the jurisdiction of the EU.
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header h3">
-        Crypto payment
-      </div>
-      <div class="card-body">
-        Pay conveniently with any of the popular cryptocurrencies.
-      </div>
 
-    </div>
+  <div class="col-md-6">
+    <app-product-card
+      [title]="'Ports of departure'"
+      [text]="'We have selected three european ports of departure for the convenience of your delivery.\n'+
+'They are located outside of the jurisdiction of the EU.'">
+    </app-product-card>
+
+    <app-product-card
+      [title]="'Crypto payment'"
+      [text]="'Pay conveniently with any of the popular cryptocurrencies.'"
+      [img_url]="'https://wikipedia.pl'"
+    >
+    </app-product-card>
 
   </div>
 </div>
