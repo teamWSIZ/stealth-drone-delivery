@@ -14,6 +14,7 @@ import { ProductsComponent } from './products/products.component';
 import { VhomeComponent } from './vhome/vhome.component';
 import { MyInsetComponent } from './my-inset/my-inset.component';
 import { ImgfitComponent } from './imgfit/imgfit.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ImgfitComponent } from './imgfit/imgfit.component';
     VhomeComponent,
     MyInsetComponent,
     ImgfitComponent,
+    ProductCardComponent,
   ],
   imports: [
     BrowserModule,
