@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {CardData} from '../_model/card-data';
 
 @Component({
   selector: 'app-product-card',
@@ -7,11 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ProductCardComponent implements OnInit {
   @Input()
-  title = '';
-  @Input()
-  text = '';
-  @Input()
-  img_url = '';
+  info: CardData;
 
   constructor() { }
 

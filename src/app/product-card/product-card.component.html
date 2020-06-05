@@ -1,8 +1,9 @@
 <div class="card">
-  <div class="card-header h2">
-    {{title}}
+  <div class="card-header h4">
+    {{info.title}}
   </div>
   <div class="card-body">
-   {{text}}
+   {{info.text}}
+    <a [href]="info.imgUrl">(link)</a>
   </div>
 </div>
