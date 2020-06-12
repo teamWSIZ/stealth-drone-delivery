@@ -3,7 +3,11 @@
     {{info.title}}
   </div>
   <div class="card-body">
-   {{info.text}}
-    <a [href]="info.imgUrl">(link)</a>
+    <p>
+      {{info.text}}
+    </p>
+    <div class="imgbox">
+      <img [src]="info.url" height="220">
+    </div>
   </div>
 </div>
