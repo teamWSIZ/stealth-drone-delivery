@@ -58,9 +58,16 @@ export class ProductsComponent implements OnInit {
 
   delete_card() {
     let id = this.editedCard.id;
-    if (id>0)
-    this.http.delete('http://10.10.0.200:8070/cards/delete&id=' + id,).subscribe(cc => {
-      alert('element usunięty z serwisu backendowego');
-    });
+    if (id>0) {
+      this.http.delete('http://10.10.0.200:8070/cards/delete?id=' + id).subscribe(cc => {
+        alert('element usunięty z serwisu backendowego');
+        //usunięcie z tablicy `cards`
+        const at = this.cards.indexOf(this.editedCard);
+        if (at > -1) {
+          this.cards.splice(at, 1);
+        }
+      });
+    }
+
   }
 }
