@@ -16,8 +16,15 @@
     <button class="btn btn-outline-light"
             (click)="new_card()"
             data-toggle="modal"
-            data-target="#editModal"
+            data-target="#editCardModal"
     >dodaj</button>
+
+    <button class="btn btn-outline-light"
+            (click)="ekstra_akcja()"
+            data-toggle="modal"
+            data-target="#ekstramodal"
+    >our modal</button>
+
   </div>
 </div>
 
@@ -25,8 +32,8 @@
 </div>
 
 
-
-<div class="modal" id="editModal" tabindex="-1" role="dialog">
+<!--to jest modal edycji obrazka-->
+<div class="modal" id="editCardModal" tabindex="-1" role="dialog">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
@@ -67,6 +74,28 @@
           </button>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="ekstramodal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title "><strong>Dodatkowy modal</strong></h4>
+      </div>
+      <div class="modal-body">
+        (modal body)
+
+      </div>
+      <div class="modal-footer">
+
+        <button class="btn btn-outline-info mr-1" data-dismiss="modal" (click)="cancel()"> Porzuć</button>
+        <button class="btn btn-outline-info" data-dismiss="modal" (click)="accept()">
+          OK
+        </button>
+      </div>
+
     </div>
   </div>
 </div>

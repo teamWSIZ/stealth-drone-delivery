@@ -59,6 +59,7 @@ export class ProductsComponent implements OnInit {
   delete_card() {
     let id = this.editedCard.id;
     if (id>0) {
+      //tu jest kod do usuwania obrazków...
       this.http.delete('http://10.10.0.200:8070/cards/delete?id=' + id).subscribe(cc => {
         alert('element usunięty z serwisu backendowego');
         //usunięcie z tablicy `cards`
@@ -68,6 +69,10 @@ export class ProductsComponent implements OnInit {
         }
       });
     }
+
+  }
+
+  ekstra_akcja() {
 
   }
 }

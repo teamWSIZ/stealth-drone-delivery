@@ -19,9 +19,11 @@ export class AppComponent {
     console.log(JSON.stringify(event.key));
     if (event.key === '@') {
       // this.router.navigate(['adm']);
-    } else if (event.shiftKey && event.key === 'Enter') {
+    } else if (event.shiftKey && event.key === 'L') {
       //shift-enter włącza tryb admina
       this.g.admin = !this.g.admin;
+      console.log(`ok -- jesteśmy adminem`);
+      // this.router.navigate(['adm']);
     }
   }
 
