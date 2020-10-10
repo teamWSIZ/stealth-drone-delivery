@@ -1,4 +1,3 @@
-console.log("hello!");
 //prosty przykład klasy
 var A = /** @class */ (function () {
     function A() {

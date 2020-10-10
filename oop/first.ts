@@ -4,6 +4,7 @@ class A {
   rank: number;
 }
 
+
 let print_A = (arg: A) => {
   console.log(`instancja A: name:${arg.name}, z rangą: ${arg.rank}`);
 };
@@ -11,6 +12,7 @@ let print_A = (arg: A) => {
 let a = new A();  // tworzy instancję klasy
 a.name = 'Abra Kadabra'; //przypisanie do pola klasy wartości
 a.rank = 37;
+
 
 console.log(a.name);
 
