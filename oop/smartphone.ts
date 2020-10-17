@@ -4,7 +4,7 @@ export class Smartphone {
   name: string;
   price: number;
   is_5G_capable: boolean;
-  simcard: Simcard;
+  simcard: Simcard; //kompozycja: klasa Smartphone ma dostęp do klasy Simcard
 
 
   constructor(name: string, price: number, is_5G_capable: boolean = false) {

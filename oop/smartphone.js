@@ -6,9 +6,13 @@ var Smartphone = /** @class */ (function () {
         this.name = name;
         this.price = price;
         this.is_5G_capable = is_5G_capable;
+        this.simcard = undefined;
     }
     Smartphone.prototype.verbose = function () {
         return "Phone(name:" + this.name + ", price:" + this.price + ", 5G:" + this.is_5G_capable + ")";
+    };
+    Smartphone.prototype.simcard_simcard = function () {
+        //trzeba sprawdzić czy czasem już nie mamy simcard-y....
     };
     return Smartphone;
 }());

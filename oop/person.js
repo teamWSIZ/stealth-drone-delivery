@@ -6,6 +6,7 @@ var Person = /** @class */ (function () {
         this.name = name;
         this.age = age;
         this.smartphones = [];
+        this.simcards = [];
     }
     //to jest metoda
     Person.prototype.verbose = function () {
@@ -22,7 +23,15 @@ var Person = /** @class */ (function () {
     };
     Person.prototype.add_smartphone = function (phone) {
         //to powinien być jedyny sposób dodawania telefonów osobom...
+        //todo:
+        //  - dodać warunek by osoba o wieku <18 lat nie mogła posiadać drogich telefonów, czyli price >1000
+        //  - dodać warunek by ososba nie mogła mieć więcej niż 3 smartphone'y
         this.smartphones.push(phone);
+    };
+    Person.prototype.insert_simcard_to_phone = function (phonenumber, phoneid) {
+        //Metoda przy wywołaniu której osoba próbuje wpiąć kartę o podanym numerze, do
+        //podanego telefonu....
+        //todo: co zrobić z phoneid? - jest potrzebny tylko unikalny dla osoby
     };
     return Person;
 }());
